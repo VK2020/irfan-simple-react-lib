@@ -13,16 +13,21 @@ npm install --save irfan-simple-react-lib
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from "react";
 
-import MyComponent from 'irfan-simple-react-lib'
-import 'irfan-simple-react-lib/dist/index.css'
+import { ExampleComponent, Chart } from "irfan-simple-react-lib";
+import "irfan-simple-react-lib/dist/index.css";
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <ExampleComponent text="Create React Library Example 😄" />
+      <Chart />
+    </div>
+  );
+};
+
+export default App;
 ```
 
 ## License

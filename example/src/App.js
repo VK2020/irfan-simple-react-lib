@@ -1,10 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import { ExampleComponent } from 'irfan-simple-react-lib'
-import 'irfan-simple-react-lib/dist/index.css'
+import { ExampleComponent, Chart, Buttons } from "irfan-simple-react-lib";
+import "irfan-simple-react-lib/dist/index.css";
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return (
+    <div>
+      <details>
+        <summary>simple component</summary>
+        <ExampleComponent text="Create React Library Example 😄" />
+      </details>
 
-export default App
+      <details>
+        <summary>Buttons component</summary>
+        <Buttons />
+      </details>
+      <Chart />
+    </div>
+  );
+};
+
+export default App;
